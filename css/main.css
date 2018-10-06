@@ -1,0 +1,10 @@
+.container {
+  display: block;
+}
+
+#noPass {
+  display: block;
+}
+#yPass {
+  display: none;
+}

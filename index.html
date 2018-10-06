@@ -2,18 +2,80 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    
+  <div class="container" id="noPass">
+    <div class="row">
+      <div class="offset-3 col-sm-5">
+        <img src="img/main.JPG" class="img-fluid rounded mx-auto d-block img-thumbnail" alt="felmita<3">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="offset-4 col-sm-3">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button" onclick="access()">Acceder</button>
+          </div>
+          <input type="password" class="form-control" id="password" placeholder="¿Me amas?" aria-label="" aria-describedby="basic-addon1">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset-3 col-sm-5">
+        <p>A la hora de acceder se supondrá que se está de acuerdo con los términos y condiciones.</p>
+      </div>
+      <div class="offset-4 col-sm-5">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Mostrar térm. y cond.</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones de Kis</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Los términos y condiciones constan de los siguientes puntos:<br>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-action">En el caso de llamarse "Felmita":
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-action">Deberá satisfacer de amor a Kis.</li>
+                      <li class="list-group-item list-group-item-action">Atenderlo y darle los cuidados necesarios.</li>
+                      <li class="list-group-item list-group-item-action">Darle abrazos y besitos.</li>
+                      <li class="list-group-item list-group-item-action">Darle las siguientes atenciones a Squeezy:
+                        <ul class="list-group">
+                          <li class="list-group-item list-group-item-action">Darle besitos</li>
+                          <li class="list-group-item list-group-item-action">Jugar a las manitas con él.</li>
+                          <li class="list-group-item list-group-item-action">Permitirle interactuar con Mary.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-group-item">Si no se llama "Felmita" debe retirarse de la página.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="yPass">
+    <div class="row">Te amo mucho felmita</div>
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
